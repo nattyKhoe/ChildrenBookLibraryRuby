@@ -1,0 +1,6 @@
+require 'pry'
+
+require_relative '../lib/library.rb'
+
+library = Library.new;
+library.display_menu

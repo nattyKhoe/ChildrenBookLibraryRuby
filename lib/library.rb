@@ -26,6 +26,7 @@ class Library
             Scraper.get_further_info(input.to_i)
         else
             puts "\n Sorry, I am not sure what you are asking"
+            input = gets.strip.downcase
         end
     end
 
@@ -56,6 +57,8 @@ class Library
             self.further_menu
         else
             puts "\n Sorry, I am not sure what you are asking"
+            puts "\n Please choose number from 1-5"
+            input = gets.strip.downcase
         end
         end
 
